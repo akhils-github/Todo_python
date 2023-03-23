@@ -1,0 +1,15 @@
+.banner{
+    background-color:  Teal;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 50px;
+}
+.banner-text{
+    top: 5%;
+    left: 50%;
+    position: absolute;
+}
+.home-head{
+  color: bisque;
+  
+}

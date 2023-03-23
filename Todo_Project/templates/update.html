@@ -1,0 +1,26 @@
+{% extends 'home.html' %}
+{% block body %}
+
+<div class="login-wrap">
+        <div class="login-html">
+
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab"></label>
+            <input id="tab-2"  name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+            <div class="login-form">
+
+                <div class="sign-up-htm">
+                    <h2 class="form-h2">Update</h2>
+					<form method="POST" enctype="multipart/form-data" class="form-edit">
+      				{% csrf_token %}
+						{{form.as_p}}
+						<div class="group">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+					</form>
+
+				</div>
+            </div>
+        </div>
+    </div>
+
+{% endblock%}
